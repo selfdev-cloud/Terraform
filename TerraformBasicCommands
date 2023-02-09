@@ -2,6 +2,7 @@ terraform init
 terraform plan --var-file SelfDevVars.tfvars
 terraform plan --var-file SelfDevVars.tfvars -out MyInfraPlan
 terraform apply "MyInfraPlan"
+terraform destroy --var-file "SelfDevVars.tfvars"
 
 
 
